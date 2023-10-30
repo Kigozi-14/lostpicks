@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <section class="my_body">
+        <div class="my_form">
+            <form method="GET" action="">
+                <input type="search" name="search" placeholder="SEARCH HERE">
+                <input type="submit", value="SEARCH">
+            </form>
+
+            {% for data in documents %}
+            <tr>
+                <td>{{ data.Names }}</td>
+                <td>{{ data.Contact }}</td>
+            </tr>
+            {% endfor %}
+        </div>
+
+
+        <div class="my_form">
+            <form method="POST" action="/post_documents" enctype="multipart/form-data">
+                <label><h3>FOR DOCUMENTS</h3></label>
+                <input type="text" name="names" id="names" placeholder='Names Of' />
+                <input type="text" name="contact" id="contact" placeholder="Contact" />
+                <input type="file" name="image_file" id="image_file" placeholder="Upload Image Here"/>
+                <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                    <li><input type="reset" value="Clear Form" class="alt" /></li>
+                </ul>
+            </form>
+        </div>
+    </section>
+{% endblock %}

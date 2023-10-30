@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+    <div>
+        <div class="my_form">
+            <form method="POST" action="#">
+                <div class="row">
+                        <input type="text" name="name" id="name" placeholder="Name" />
+                        <input type="text" name="email" id="email" placeholder="Email" />
+                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <ul class="actions">
+                            <li><input type="submit" value="Send Message" /></li>
+                            <li><input type="reset" value="Clear Form" class="alt" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

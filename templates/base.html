@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/main.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">LostPicks</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link"><a href="/">Home</a></li>
+                    <li class="nav-link"><a href="{{ url_for('drivingpermit') }}">Permits</a></li>
+                    <li class="nav-link"><a href="{{ url_for('nationalid') }}">National Ids</a></li>
+                    <li class="nav-link"><a href="{{ url_for('numberplates') }}">Number Plates</a></li>
+                    <li class="nav-link"><a href="{{ url_for('othercard') }}">Other Cards</a></li>
+                    <li class="nav-link"><a href="{{ url_for('documents') }}">Documents</a></li>
+                    <li class="nav-link"><a href="{{ url_for('contact') }}">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}
+
+    {% endblock %}
+    <div>
+        <footer> <p>web by logcatStudios</p></footer>
+    </div>
+    
+
+</body>
+</html>

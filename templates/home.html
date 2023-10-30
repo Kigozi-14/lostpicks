@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    
+    <section class="site-title">
+
+        <div class="heding">
+            <h1>HAVE YOU <br> LOST <br> ANY OF <br> THESE</h1>
+            <h5>Click any to search for</h5>
+        </div>
+
+        <div class="site-background">
+            <button class="btn"><a href="{{ url_for('nationalid') }}">National Id's</a></button>
+            <button class="btn"><a href="{{ url_for('drivingpermit') }}">Driving Permits</a></button>
+            <button class="btn"><a href="{{ url_for('numberplates') }}">Number Plates</a></button>
+            <button class="btn"><a href="{{ url_for('othercard') }}">Other Cards</a></button>
+            <button class="btn"><a href="{{ url_for('documents') }}">Documents</a></button>
+        </div>
+    </section>
+
+{% endblock %}

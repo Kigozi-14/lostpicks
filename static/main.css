@@ -1,0 +1,174 @@
+/* Set background color for the body */
+.my_body {
+    background-color: #dde8f6;
+    height: 100vh;
+    padding: 20px;
+    display: inline-table;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+.nav{
+    background: rgb(6, 6, 6);
+    padding: 0 2rem;
+    height: 0rem;
+    min-height: 10vh;
+    overflow: hidden;
+    transition: height 1s ease-in-out;
+}
+
+.nav .nav-menu{    
+    justify-content: space-between;
+    display: inline-flex;
+    padding: 0rem 2rem;
+}
+
+.nav .nav-items{
+    display: inline-flex;
+    padding: 0rem 10rem;
+    margin: 0;
+}
+
+.nav .nav-items .nav-link{
+    padding: 1.6rem 1rem;
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.nav .nav-items .nav-link:hover{
+    background-color: rgb(5, 5, 5);
+}
+
+.nav .nav-items .nav-link:hover a{
+    color: rgb(255, 255, 255)
+}
+
+.nav .nav-brand a{
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    display: block;
+    font-family: var(--Lexend);
+    font-size: 1.6rem;
+}
+
+/* BELOW IS MY BODY  */
+
+
+
+/* Style for the section */
+.my_body {
+  display: flex;
+  height: 70vh;
+}
+
+/* Style for the left div */
+.search_box {
+  background-color: #e6f2ff;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style for the right div */
+.my_form {
+  background-color: #e6f2ff;
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Style for the headings */
+h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Style for the form inputs and labels */
+form label, form input[type="text"], form input[type="file"], form input[type="submit"], form input[type="reset"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+/* Style for the form submit and reset buttons */
+form input[type="submit"], form input[type="reset"] {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  align-self: center;
+}
+
+/* Hover style for the form submit and reset buttons */
+form input[type="submit"]:hover, form input[type="reset"]:hover {
+  background-color: #0062cc;
+}
+
+/* Style for the form notes */
+form p {
+  color: #666;
+  font-size: 12px;
+  margin: 0;
+  text-align: center;
+}
+
+/* Style for the form actions */
+ul.actions {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Style for the form action buttons */
+ul.actions li {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Style for the alternate form action button */
+ul.actions li:last-child {
+  margin-right: 0;
+}
+
+/* Style for the alternate form action button */
+.alt {
+  background-color: #808080;
+}
+
+/* Style for the form error message */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+
+/* FOOTER STYLING */
+
+footer {
+  background-color: #333;
+  height: 7vh;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+footer p {
+  margin: 0;
+}
+
+
